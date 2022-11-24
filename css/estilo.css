@@ -1,0 +1,100 @@
+.pgNam {
+    color: rgb(64, 17, 104);}
+
+body { background-color: rgb(189, 185, 214);}
+
+.title {
+    color: rgb(189, 185, 214);
+    align-items: center;
+    font-size: xx-large; }
+
+.bgFondo {
+    background-color: rgb(64, 17, 104);
+}
+.padding {padding: 10px 5px
+}
+
+.nav li {
+    padding: 1px;
+    background-color: none;
+    margin: 5px;
+    border-radius: 20px; 
+    color: aliceblue;}
+
+.list {
+    color: rgb(26, 22, 30);
+}
+
+/* grid */
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+}
+.gridIndex {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+}
+
+header {grid-area: header; display: flex; justify-content: space-between; background-color: rgb(64, 17, 104);}
+main {grid-area: main;}
+footer {grid-area: footer; display: flex; justify-content: space-between; border-top: 1px solid purple;}
+ul {display: flex;}
+li {list-style-type: none;}
+a {margin: 5px;}
+
+.gridMain {
+    display: grid;
+    grid-template-areas:
+    "titulo titulo"
+    "banner-2 banner-2"
+    "textoTitulo textoTitulo"
+    "imgViolet textoImg";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+}
+
+.banner-2 {grid-area: banner-2; width: 80%;}
+.titulo {grid-area: titulo; align-items: center; color: rgb(64, 17, 104);}
+.textoTitulo {grid-area: textoTitulo;}
+.imgViolet {grid-area: imgViolet; width: 80%;}
+.p20 {padding: 20px;}
+
+
+.gridServ {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    grid-template-columns: 33% 34% 33%;
+    grid-template-rows: auto;
+}
+
+header {grid-area: header; display: flex; justify-content: space-between; background-color: rgb(64, 17, 104);}
+main {grid-area: main;}
+footer {grid-area: footer; display: flex; justify-content: space-between; border-top: 1px solid purple;}
+ul {display: flex;}
+li {list-style-type: none;}
+a {margin: 5px;}
+
+
+.gridMserv {
+    display: grid;
+    grid-template-areas:
+    "pgNam pgNam"
+    "texto-1 imgServ"
+    "list list";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(6, auto);
+}
+
+.pgNam {grid-area: pgNam;}
+.texto-1 {grid-area: texto-1;}
+.imgServ {grid-area: imgServ; width: 60%; padding: 10px;}
+.list {grid-area: list; justify-content: space-between;}
